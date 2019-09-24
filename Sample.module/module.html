@@ -1,15 +1,16 @@
-<div class="cards">
-  {% for card in module.card %}
-  <div class="cards__card card">
-    {% if card.image.src %}
-    <div class="card__image">
-      <img src="{{ card.image.src }}" alt="{{ card.image.alt }}" width="{{ card.image.width }}" height="{{ card.image.height }}">
+<div class="text-center countDown">
+  <div class="">
+      <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
+    <div class="dateCount noListStyle">
+      <ul>
+        <li class='ib'><span id="days"></span> days</li>
+        <li class='ib'><span id="hours"></span> Hours</li>
+        <li class='ib'><span id="minutes"></span> Minutes</li>
+        <li class='ib'><span id="seconds"></span> Seconds</li>
+      </ul>
     </div>
-    {% endif %}
-    <div class="card__text">
-      <h4>{% inline_text field="title" value="{{ card.title }}" %}</h4>
-      <p>{% inline_text field="text" value="{{ card.text }}" %}</p>
-    </div>
+    
   </div>
-  {% endfor %}
+    
 </div>
+
