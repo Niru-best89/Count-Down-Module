@@ -46,8 +46,7 @@ let countDown = new Date(date).getTime(),
   You can use this module and place it at any point of your page design ....
 checkout the below link to know how to create custom modules   https://knowledge.hubspot.com/articles/kcs_article/cos-general/create-and-edit-modules for example
 
-## Screenshots
-
+Below link is a vedio where this shows how to work with this module:
 https://www.loom.com/share/0fc08026b64f4f46aa0e10351d15e591
 
 
