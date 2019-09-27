@@ -6,24 +6,13 @@
 # Count Down Module
 This module is for showcasing upcoming event timer. This module is meant to be used with a Coded HubSpot Template.
 The following resources were used:
+1.Custom Modules
 
+A demo of this in action can be seen on https://preview.hs-sites.com/_hcms/preview/template/multi?is_buffered_template_layout=true&portalId=2474026&tc_deviceCategory=undefined&template_layout_id=13430734727&updated=1568621668416
 
+## How to use this module
+After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. You can create a Flexible Column Container using the {% widget_container %} tag. An example of this is below:
 
-Use this repo structure as a template for your HubSpot Code Gallery submissions. Please [clone this repo](https://help.github.com/en/articles/cloning-a-repository) and build out your entry. 
-
-*Your Documentation*
-Please spend the time to create good documentation and step-by-step instructions in your readme file (the community appreciates it). If you’re looking for a good example, please review AJ LaPorte’s [“Speaker Lineup Cards” on GitHub](https://github.com/ajlaporte/Speaker-Lineup-Cards "AJ LaPorte's HubSpot Speaker Lineup Card Module, Code Gallery Submission").
-
-*GIF Walk Throughs*
-It’s recommended to include GIF recordings to show specific setup steps. You can use [RecordIt](http://recordit.co/ "RecordIt App for screen recording and GIFs") chrome extension to record these quickly. 
-
-*Ready to Submit it?*
-When you're ready to submit, visit the [contribute to the Code Gallery](https://hubs.ly/H0h79hk0) page to submit your entry.
-
-*Once submitted, your entry will be reviewed before publishing*
-To keep quality high and protect against any malicious activity, we review all entries before publishing them live in the Code Gallery. We try to do this as fast as possible, however, this is a voulenteer effor - please allow up to 7-10 business days. :) Thanks for your patience.   
-
-## Code
 
 The code gallery takes two types of submissions currently:
 
