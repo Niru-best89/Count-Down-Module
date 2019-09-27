@@ -8,7 +8,7 @@ A demo of this in action can be seen on https://preview.hs-sites.com/_hcms/previ
 ## How to use this module
 After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. An example of this is below:
 <pre>
-<div class="text-center countDown">
+/*<div class="text-center countDown">
   <div class="">
       <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
     <div class="dateCount noListStyle">
@@ -20,7 +20,7 @@ After coding your custom template, your best use with this module inside of pre-
       </ul>
     </div>
     
-  </div>
+  </div>*/
   </pre>
   Once you have this code in your custom module with some javascript for it given below:
   
