@@ -46,11 +46,8 @@ const second = 1000,
 checkout the below link to know how to create custom modules   https://knowledge.hubspot.com/articles/kcs_article/cos-general/create-and-edit-modules for example
 
 Below link is a vedio where this shows how to work with this module:
+
 https://drive.google.com/open?id=1gh9y_rkmwRl99mBE3LV1hqp44LXkteQu
-
-https://drive.google.com/open?id=1o36lfj1RF-CGYRR3OVNDCYOQWnBlE4A8
-
-https://drive.google.com/open?id=1upLMZdsYr_4KgxXEOQVPbb1ICdLBMc0n
 
 https://www.loom.com/share/0fc08026b64f4f46aa0e10351d15e591
 
