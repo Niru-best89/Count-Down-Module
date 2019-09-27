@@ -3,7 +3,12 @@
 
 ---
 
-# Template - HubSpot Code Gallery Entry Repo Template
+# Count Down Module
+This module is for showcasing upcoming event timer. This module is meant to be used with a Coded HubSpot Template.
+The following resources were used:
+
+
+
 Use this repo structure as a template for your HubSpot Code Gallery submissions. Please [clone this repo](https://help.github.com/en/articles/cloning-a-repository) and build out your entry. 
 
 *Your Documentation*
