@@ -7,7 +7,7 @@ A demo of this in action can be seen on https://preview.hs-sites.com/_hcms/previ
 
 ## How to use this module
 After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. An example of this is below:
- <code>
+
   <div class="text-center countDown">
   <div class="">
   <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
@@ -20,7 +20,7 @@ After coding your custom template, your best use with this module inside of pre-
        </ul>
      </div>
      </div>
-    </code>
+  
  
   Once you have this code in your custom module with some javascript for it given below:
   
@@ -39,15 +39,17 @@ const second = 1000,
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);  }, second)
-        
-           
-        
+            
    </pre>
 
   You can use this module and place it at any point of your page design ....
 checkout the below link to know how to create custom modules   https://knowledge.hubspot.com/articles/kcs_article/cos-general/create-and-edit-modules for example
 
 Below link is a vedio where this shows how to work with this module:
+https://drive.google.com/open?id=1gh9y_rkmwRl99mBE3LV1hqp44LXkteQu
+https://drive.google.com/open?id=1o36lfj1RF-CGYRR3OVNDCYOQWnBlE4A8
+https://drive.google.com/open?id=1upLMZdsYr_4KgxXEOQVPbb1ICdLBMc0n
+
 https://www.loom.com/share/0fc08026b64f4f46aa0e10351d15e591
 
 
