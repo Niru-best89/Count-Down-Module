@@ -7,7 +7,7 @@ A demo of this in action can be seen on https://preview.hs-sites.com/_hcms/previ
 
 ## How to use this module
 After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. An example of this is below:
-
+<pre>
 <div class="text-center countDown">
   <div class="">
       <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
@@ -21,27 +21,28 @@ After coding your custom template, your best use with this module inside of pre-
     </div>
     
   </div>
-  
+  </pre>
   Once you have this code in your custom module with some javascript for it given below:
   
   // js
+  <pre>
 var date = $('.countDate').attr('src');
-
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
-
-let countDown = new Date(date).getTime(),
-    x = setInterval(function() {
-
-      let now = new Date().getTime(),
-          distance = countDown - now;
-
-      document.getElementById('days').innerText = Math.floor(distance / (day)),
+       let countDown = new Date(date).getTime(),
+        x = setInterval(function() {
+        let now = new Date().getTime(),
+        distance = countDown - now;
+        document.getElementById('days').innerText = Math.floor(distance / (day)),
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);  }, second)
+        
+           
+        
+   </pre>
 
   You can use this module and place it at any point of your page design ....
 checkout the below link to know how to create custom modules   https://knowledge.hubspot.com/articles/kcs_article/cos-general/create-and-edit-modules for example
