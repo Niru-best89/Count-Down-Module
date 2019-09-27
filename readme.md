@@ -7,18 +7,20 @@ A demo of this in action can be seen on https://preview.hs-sites.com/_hcms/previ
 
 ## How to use this module
 After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. An example of this is below:
-  //<div class="text-center countDown">
-  //<div class="">
-  //  <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
-     // <div class="dateCount noListStyle">
-        // <ul>
-        //   <li class='ib'><span id="days"></span> days</li>
-        //   <li class='ib'><span id="hours"></span> Hours</li>
-         //  <li class='ib'><span id="minutes"></span> Minutes</li>
-         //  <li class='ib'><span id="seconds"></span> Seconds</li>
-         //</ul>
-       //</div>
-      //</div>
+ <code>
+  <div class="text-center countDown">
+  <div class="">
+  <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
+  <div class="dateCount noListStyle">
+        <ul>
+       <li class='ib'><span id="days"></span> days</li>
+       <li class='ib'><span id="hours"></span> Hours</li>
+    <li class='ib'><span id="minutes"></span> Minutes</li>
+         <li class='ib'><span id="seconds"></span> Seconds</li>
+       </ul>
+     </div>
+     </div>
+    </code>
  
   Once you have this code in your custom module with some javascript for it given below:
   
