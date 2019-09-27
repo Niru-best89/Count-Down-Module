@@ -11,23 +11,49 @@ The following resources were used:
 A demo of this in action can be seen on https://preview.hs-sites.com/_hcms/preview/template/multi?is_buffered_template_layout=true&portalId=2474026&tc_deviceCategory=undefined&template_layout_id=13430734727&updated=1568621668416
 
 ## How to use this module
-After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. You can create a Flexible Column Container using the {% widget_container %} tag. An example of this is below:
+After coding your custom template, your best use with this module inside of pre-defined Flexible Column area. An example of this is below:
 
+<div class="text-center countDown">
+  <div class="">
+      <span class='countDate' src='{{ module.countdown_date|datetimeformat('%Y/%m/%d') }}'></span>  
+    <div class="dateCount noListStyle">
+      <ul>
+        <li class='ib'><span id="days"></span> days</li>
+        <li class='ib'><span id="hours"></span> Hours</li>
+        <li class='ib'><span id="minutes"></span> Minutes</li>
+        <li class='ib'><span id="seconds"></span> Seconds</li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  Once you have this code in your custom module with some javascript for it given below:
+  
+  // js
+var date = $('.countDate').attr('src');
 
-The code gallery takes two types of submissions currently:
+const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
 
-1. Modules (recommended) - fully functional v2 modules
-2. Snippets - snippets of code that are intended to be used in coded templates such as blog listing snippets, HubDB dynamic page templates, and other techniques.
+let countDown = new Date(date).getTime(),
+    x = setInterval(function() {
 
-For modules, the structure of the files must match the structure used when working with a module via [FTP](https://designers.hubspot.com/docs/tools/hubspot-ftp). This is necessary so that it is easy for a developer that is browsing the code gallery to try out one of the entries. See [Sample.module](./Sample.module) for an example.
+      let now = new Date().getTime(),
+          distance = countDown - now;
 
-Notes:
-- Remove `module_id` and `portal_id` from `meta.json` if copying from FTP
-- Consider using placeholder images instead of images from the HubSpot file manager
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);  }, second)
 
-Files in each category will be listed in alphabetical order on the code gallery website.
+  You can use this module and place it at any point of your page design ....
+checkout the below link to know how to create custom modules   https://knowledge.hubspot.com/articles/kcs_article/cos-general/create-and-edit-modules for example
 
 ## Screenshots
+
+
 Add screenshots under the screenshots folder.
 .jpeg, .jpg, .png and .gif files will be picked up automatically regardless of filename.
 Screenshots will be listed in alphabetical order on the code gallery website.
